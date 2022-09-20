@@ -1,21 +1,24 @@
 *{
 padding: 0;
-margin: auto;
+margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 }
 body{
     
 }
 #cab{
-   
     align-items: center;
+    display: flex;
+    justify-content: start;
     display: flex;
     background-color: rgb(53, 179, 179);
     height: 5vh;
     padding: 0 20px;
+    color: aliceblue;
+
 }
 #cab img{
-    width: 40px;
+    width: 45px;
 }
 .vagas{
     flex-direction: column;
@@ -25,4 +28,6 @@ body{
     width: 8vw;
     height: 20vh;
     margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(116, 238, 107);
 }
