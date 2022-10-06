@@ -1,5 +1,5 @@
-const Item = require('../models/Item');
-const con = require('../models/patrimonioDAO');
+const Item = require('../models/index');
+const con = require('../models/estacionamentoDAO');
 
 const cadCliente = (req, res) => {
     con.query(Item.toCreate(req.body), (err, result) => {
