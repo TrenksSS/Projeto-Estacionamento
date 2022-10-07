@@ -9,26 +9,25 @@ body{
 #cab{
     align-items: center;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     display: flex;
-    background-color: rgb(53, 179, 179);
+    background-color: rgb(17, 65, 65);
     height: 5vh;
     padding: 0 20px;
     color: aliceblue;
-    
-
+    fle
 }
 #cab img{
-    width: 45px;
+    width: 30px;
 }
 .vagas{
     flex-direction: column;
     display: flex;
     align-items: center;
-    border: 5px solid rgb(88, 216, 214);
+    border: 2px solid rgb(88, 216, 214);
     width: 8vw;
     height: 20vh;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgb(116, 238, 107);
+    background-color: rgb(135, 254, 126);
 }
