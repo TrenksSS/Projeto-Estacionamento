@@ -3,31 +3,32 @@ padding: 0;
 margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    
+body{ 
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(167, 241, 216);
 }
 #cab{
     align-items: center;
     display: flex;
     justify-content: space-between;
     display: flex;
-    background-color: rgb(17, 65, 65);
+    background-color: rgb(16, 98, 98);
     height: 5vh;
     padding: 0 20px;
     color: aliceblue;
-    fle
 }
 #cab img{
-    width: 30px;
+    width: 50px;
 }
 .vagas{
     flex-direction: column;
     display: flex;
     align-items: center;
-    border: 2px solid rgb(88, 216, 214);
+    border: 2px solid rgb(24, 139, 137);
     width: 8vw;
     height: 20vh;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgb(135, 254, 126);
+    background-color: rgb(174, 238, 169);
 }

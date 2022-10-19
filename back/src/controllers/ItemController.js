@@ -6,7 +6,7 @@ const cadCliente = (req, res) => {
         if (err == null)
             res.status(201).end();
         else
-            if (err.sqlState == 23000)//Se o ni já está cadastrado
+            if (err.sqlState == 23000)
                 res.status(406).json(err).end();
             else
                 res.status(500).json(err).end();
