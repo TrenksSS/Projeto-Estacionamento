@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="/assets/silhueta-do-lado-preto-do-carro.png" type="image/x-icon">
+    <link rel="stylesheet" href="pagCli.css">
+    <link rel="shortcut icon" href="../../assets/hatchback.png" type="image/x-icon">
     <title>Estacionamento</title>
 </head>
 
@@ -14,18 +14,44 @@
     <header>
         <div id="cont">
             <div id="cab">
-                <img src="/assets/silhueta-do-lado-preto-do-carro.png" alt="silhueta carro">
-                <h1>Estacionamento</h1>
-                <img src="/assets/cardapio.png" alt="silhueta carro">
+                <div id="cab2">
+                    <ul>
+                        <li><img src="../../assets/hatchback.png" alt="silhueta carro"></li>
+                        <li>
+                            <h1>Estacionamento</h1>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="dp-menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a>
+                        <li><a href="">Cadastro</a>
+                            <ul>
+                                <li><a href="">Cadastrar Funcionarios</a></li>
+                                <li><a href="">Cadastrar Veiculo</a></li>
+                                <li><a href="">Cadastrar Vagas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Endereço</a></li>
+                    </ul>
+                </nav>
             </div>
     </header>
-    <div id="cont">
-        <div class="vagas model">
-            <h1 id="title">Vaga 01</h1>
-            <img src="/assets/desativado.png" alt="icone pcd">
-            <p>Vaga</p>
-            <input type="checkbox" id="check" name="OC" checked>
-        </div>
+    <div id="cont2">
+        <form>
+            <div class="FormCli">
+
+                <img src="../../assets/new-user.png" alt="">
+                <h2>Cadastrar Cliente</h2>
+                <p>Nome e Sobrenome</p>
+                <input type="text" name="Nome do Cliente" required>
+                <p>Telefone</p>
+                <input type="text" name="Telefone do Cliente" required>
+                <button onclick="cadCli()">CADASTRAR</button>
+
+            </div>
+        </form>
     </div>
 
 </body>

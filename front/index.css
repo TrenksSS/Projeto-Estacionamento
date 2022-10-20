@@ -1,34 +1,95 @@
-*{
-padding: 0;
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-body{ 
+
+body {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(167, 241, 216);
+    background-color: rgb(190, 194, 193);
 }
-#cab{
+
+#cab {
     align-items: center;
     display: flex;
     justify-content: space-between;
     display: flex;
-    background-color: rgb(16, 98, 98);
-    height: 5vh;
+    background-color: rgb(95, 156, 241);
+    height: 8vh;
     padding: 0 20px;
     color: aliceblue;
+    box-shadow: rgba(22, 22, 22, 0.374) 0px 7px 29px 0px; 
 }
-#cab img{
+
+#cab2 img {
     width: 50px;
 }
-.vagas{
+
+#cab2 ul {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+#cab2 ul li {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.vagas {
     flex-direction: column;
     display: flex;
     align-items: center;
-    border: 2px solid rgb(24, 139, 137);
+    border: 2px solid rgb(246, 229, 47);
     width: 8vw;
     height: 20vh;
     margin: 10px;
     border-radius: 10px;
     background-color: rgb(174, 238, 169);
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    background-color: rgb(95, 156, 241);
+}
+
+.dp-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: rgb(27, 112, 232);
+}
+
+/*Sub menu*/
+.dp-menu ul ul {
+    display: none;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px;
+}
+
+.dp-menu ul ul li {
+    display: inline;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+
 }
