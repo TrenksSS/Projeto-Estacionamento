@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pagCli.css">
+    <link rel="stylesheet" href="cadVag.css">
     <link rel="shortcut icon" href="../../../assets/hatchback.png" type="image/x-icon">
     <title>Estacionamento</title>
 </head>
@@ -51,11 +51,18 @@
             <div class="FormCli">
 
                 <img src="../../../assets/new-user.png" alt="">
-                <h2>Cadastrar Cliente</h2>
-                <p>Nome e Sobrenome</p>
-                <input type="text" name="Nome do Cliente" required>
-                <p>Telefone</p>
-                <input type="text" name="Telefone do Cliente" required>
+                <h2>Cadastrar Vaga</h2>
+                <p>Veiculo que a vaga suporta</p>
+                <select>
+                    <option value="Carro">Carro</option>
+                    <option value="Moto">Moto</option>
+                </select>
+                <p>Tipo da Vaga</p>
+                <select>
+                    <option value="idosos">Idosos</option>
+                    <option value="deficientes">Deficientes</option>
+                    <option value="normal">Normal</option>
+                </select>
                 <button onclick="cadCli()">CADASTRAR</button>
 
             </div>

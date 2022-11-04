@@ -130,3 +130,9 @@ align-items: center;
     display: block;
 
 }
+select{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(27, 112, 232;
+}

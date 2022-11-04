@@ -26,9 +26,7 @@ create table Veiculo(
 create table Vagas (
     id_vaga integer not null primary key,
     tipo varchar(20),
-    stat boolean not null,
-    hr_ent date,
-    hr_sai date
+    stat boolean not null
 );
 
 create table entradas(
@@ -46,8 +44,7 @@ create table funcionarios(
     senha varchar(20)
 );
 create view vw_historico as
-select s.id_cliente, s.placa_veiculo, s.tipo_veiculo , i.id_vaga, i.hr_ent,
-i.hr_sai from Veiculo s
+select s.id_cliente, s.placa_veiculo, s.tipo_veiculo , i.id_vaga from Veiculo s
 inner join clientes c on s.id_cliente = c.id_cliente
 inner join entradas v on s.placa_veiculo = v.placa_veiculo
 inner join  Vagas i on v.id_vaga = i.id_vaga;
