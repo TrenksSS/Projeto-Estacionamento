@@ -14,6 +14,7 @@ router.post("/estacionamento/Veiculo",Veiculo.cadVeiculo);
 router.get("/estacionamento/Veiculo",Veiculo.listarVeiculo);
 router.post("/estacionamento/Vagas",Vagas.cadVagas);
 router.get("/estacionamento/Vagas",Vagas.listarVagas);
+router.put("/estacionamento/Vagas",Vagas.alterarVaga)
 router.post("/estacionamento/Funcionarios",Funcionario.cadFuncionario);
 router.get("/estacionamento/Funcionarios",Funcionario.listarFunc);
 router.delete("/estacionamento/Funcionarios",Funcionario.ExcluirFunc);

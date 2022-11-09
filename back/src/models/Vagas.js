@@ -6,8 +6,19 @@ const toReadAll = () => {
     return "SELECT * FROM Vagas";
 }
 
+const toUpdate = (model) => {
+    return `UPDATE vagas SET 
+    id_vaga = '${model.id_vaga}',
+    tipo = '${model.tipo}',
+    stat = ${model.stat},
+    hr_ent = '${model.hr_ent}',
+    hr_sai = ${model.hr_sai}`;
+}
+
 
 module.exports = {
     toCreateVagas,
-    toReadAll
+    toReadAll,
+    toUpdate
+
 }

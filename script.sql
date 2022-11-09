@@ -26,13 +26,9 @@ create table Veiculo(
 create table Vagas (
     id_vaga integer not null primary key,
     tipo varchar(20),
-<<<<<<< HEAD
     stat boolean not null,
     hr_ent datetime,
     hr_sai datetime
-=======
-    stat boolean not null
->>>>>>> 0b1219ed9b59dcae57df4b00c49a88aef1711ce6
 );
 
 create table entradas(

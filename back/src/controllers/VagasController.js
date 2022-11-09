@@ -21,7 +21,21 @@ const listarVagas = (req, res) => {
             res.status(500).end();
     });
 }
+
+const alterarVaga = (req, res) => {
+    con.query(Item.toUpdate(req.body), (err, result) => {
+        if (err == null)
+            if (result.affectedRows > 0)
+                res.status(200).end();
+            else
+                res.status(404).end();
+        else
+            res.status(500).json(err).end();
+    });
+} 
+
 module.exports = {
     cadVagas,
     listarVagas,
+    alterarVaga
 }
