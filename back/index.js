@@ -8,6 +8,6 @@ app.use(express.json());
 app.use(cors());
 app.use(itens);
 
-app.listen(3000, () => {
-    console.log("Respondendo na porta 3000");
+app.listen(3004, () => {
+    console.log("Respondendo na porta 3004");
 });

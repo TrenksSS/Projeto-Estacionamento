@@ -1,8 +1,8 @@
-const Item = require('../models/index');
+const Item = require('../models/Veiculo');
 const con = require('../models/estacionamentoDAO');
 
-const cadCliente = (req, res) => {
-    con.query(Item.toCreateCli(req.body), (err, result) => {
+const cadVeiculo = (req, res) => {
+    con.query(Item.toCreateVeiculo(req.body), (err, result) => {
         if (err == null)
             res.status(201).end();
         else
@@ -13,7 +13,7 @@ const cadCliente = (req, res) => {
     });
 }
 
-const listarCli = (req, res) => {
+const listarVeiculo = (req, res) => {
     con.query(Item.toReadAll(), (err, result) => {
         if (err == null)
             res.json(result).end();
@@ -22,6 +22,6 @@ const listarCli = (req, res) => {
     });
 }
 module.exports = {
-    cadCliente,
-    listarCli,
+    cadVeiculo,
+    listarVeiculo,
 }

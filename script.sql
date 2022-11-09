@@ -27,8 +27,8 @@ create table Vagas (
     id_vaga integer not null primary key,
     tipo varchar(20),
     stat boolean not null,
-    hr_ent date,
-    hr_sai date
+    hr_ent datetime,
+    hr_sai datetime
 );
 
 create table entradas(
@@ -58,5 +58,8 @@ insert into clientes values(3,"Lúcia da Silva de Souza","19880614");
 insert into clientes values(4,"Marcos de Souza Castro","20020713");
 insert into clientes values(5,"Maria Oliveira Castro","20050814");
 insert into clientes values(6,"Jurema de Souza Castro","20070615");
+
+
+insert into Veiculo values(1,"jkz-2093","Preto","gol","carro");
 
 select * from clientes;
