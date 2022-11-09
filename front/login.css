@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(190, 194, 193);
+    display: flex;
+}
+
+#cont1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    font-size: 25px;
+}
+
+#cont2 {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#card-login {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: rgb(75, 105, 238);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#card-login form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+#card-login form input {
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    border: 0;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.445) 0px 10px 20px, rgba(0, 0, 0, 0.479) 0px 6px 6px;
+}
+#card-login form button {
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgb(239, 241, 120);
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.445) 0px 10px 20px, rgba(0, 0, 0, 0.479) 0px 6px 6px;
+}
+#cred{
+    margin-top: 110px;
+    font-size: 12px;
+}
+#card-login form h2 {
+ margin-bottom: 20px;
+}

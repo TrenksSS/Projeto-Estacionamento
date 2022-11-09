@@ -38,23 +38,23 @@ body {
     padding: 10px;
 }
 #cont2{
-    margin-top:20px;
     width: 100vw;
     height: 60vh;
 display: flex;
 justify-content: center;
-/* align-items: center; */
+align-items: center;
 }
 .FormCli{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 90vw;
-    height: 10vh;
+    width: 30vw;
+    height: 50vh;
     border-radius: 15px;
     font-size: 25px;
     color: white;
     background-color: rgb(125, 172, 238);
-    justify-content: space-between;
+    justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .FormCli input{
@@ -68,12 +68,11 @@ justify-content: center;
 }
 .FormCli img{
     width: 70px;
-    padding: 20px;
 }
 .FormCli button{
     color: white;
     cursor: pointer;
-    margin-right: 20px;
+    margin-top: 20px;
     border: 0;
     width: 200px;
     height: 40px;
@@ -130,4 +129,10 @@ justify-content: center;
 .dp-menu ul ul li a {
     display: block;
 
+}
+select{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(27, 112, 232;
 }
