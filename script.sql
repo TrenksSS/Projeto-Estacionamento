@@ -26,13 +26,9 @@ create table Veiculo(
 create table Vagas (
     id_vaga integer not null primary key,
     tipo varchar(20),
-<<<<<<< HEAD
     stat boolean not null,
     hr_ent datetime,
     hr_sai datetime
-=======
-    stat boolean not null
->>>>>>> 0b1219ed9b59dcae57df4b00c49a88aef1711ce6
 );
 
 create table entradas(
@@ -61,6 +57,8 @@ insert into clientes values(3,"Lúcia da Silva de Souza","19880614");
 insert into clientes values(4,"Marcos de Souza Castro","20020713");
 insert into clientes values(5,"Maria Oliveira Castro","20050814");
 insert into clientes values(6,"Jurema de Souza Castro","20070615");
+
+insert into funcionarios values(123,"ADM","123");
 
 
 insert into Veiculo values(1,"jkz-2093","Preto","gol","carro");

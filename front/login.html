@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="cont1">
-        <img src="../assets/hatchback.png" alt="silhueta carro">
+        <img id="imgc" src="../assets/Off road-amico.svg" alt="silhueta carro">
         <h1>Sistema de controle<br/> do Estacionamento</h1>
         <p>Identifiquece para entrar!</p>
     </div>
@@ -19,10 +19,10 @@
             <form>
                 <h2>LOGIN</h2>
                 <p>CPF</p>
-                <input type="text" name="Nome do Cliente" required>
+                <input id="cpf" type="text" name="CPF do funcionario" required>
                 <p>SENHA</p>
-                <input type="text" name="Telefone do Cliente" required>
-                <button onclick="direto()">ENTRAR</button>
+                <input id="psw" type="password" name="Telefone do Cliente" required>
+                <button onclick="login()">ENTRAR</button>
             </form>
             <p id="cred">© From Carlos and Rodolfo</p>
         </div>

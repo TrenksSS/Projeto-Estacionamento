@@ -45,15 +45,17 @@ body {
 }
 
 .vagas {
-    flex-direction: column;
+    flex-direction:row;
+    justify-content:space-between;
     display: flex;
     align-items: center;
-    border: 2px solid rgb(246, 229, 47);
-    width: 8vw;
-    height: 20vh;
+    border: 2px solid var(--cor-3);
+    width: 90vw;
+    height: 5vh;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgb(174, 238, 169);
+    background-color: var(--cor-4);
+    padding: 20px;
 }
 
 .dp-menu ul {
@@ -100,4 +102,15 @@ body {
 .dp-menu ul ul li a {
     display: block;
 
+}
+#cont2{
+ display: flex;
+ justify-content: center;
+ 
+}
+#cont2 h1{
+    color: rgb(0, 0, 0);
+}
+#cont2 h2{
+    color: rgb(223, 220, 220);
 }
