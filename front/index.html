@@ -15,11 +15,13 @@
         <div id="cont">
             <div id="cab">
                 <div id="cab2">
-                <ul>
-                    <li><img src="../assets/hatchback.png" alt="silhueta carro"></li>
-                    <li><h1>Estacionamento</h1></li>
-                </ul>
-            </div>
+                    <ul>
+                        <li><img src="../assets/hatchback.png" alt="silhueta carro"></li>
+                        <li>
+                            <h1>Estacionamento</h1>
+                        </li>
+                    </ul>
+                </div>
                 <nav class="dp-menu">
                     <ul>
                         <li><a href="">Listas</a>
@@ -30,11 +32,26 @@
                                 <li><a href="paginas/vagas/index.html">Vagas</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Contato</a></li>
                     </ul>
+                    <button id="bt" onclick="mostrarModal()">cadastrar</button>
                 </nav>
+
             </div>
+            <div class="modais">
+            <div class="cadmodal">
+                <h1>Cadastrar Vaga</h1>
+                <h2 id="">Tipo</h2>
+                <select id="op" name="select">
+                    <option value="valor1">carro</option>
+                    <option value="valor3">moto</option>
+                    <option value="valor3">PCD</option>
+                  </select>
+                  <button class="cadastrar" onclick="">Cadastrar</button>
+                  <button class="cadastrar" onclick="modais.setAttribute('style','display:none;')">Cancelar</button>
+            </div>
+        </div>
     </header>
+
     <div id="cont2">
         <div class="vagas model">
             <h1 id="title">Vaga 01</h1>
@@ -45,5 +62,5 @@
     </div>
 
 </body>
-
+<script src="index.js" ></script>
 </html>

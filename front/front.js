@@ -19,3 +19,7 @@ function login(){
           
      })
 }
+
+function mostraModal(){
+          modais.setAttribute("style","display:flex;");
+}

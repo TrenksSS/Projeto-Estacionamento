@@ -1,0 +1,4 @@
+Quando o nodemon não funciona:
+
+npm install -g nodemon
+
