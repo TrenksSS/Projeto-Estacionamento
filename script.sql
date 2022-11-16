@@ -27,17 +27,18 @@ create table Vagas (
     id_vaga integer not null primary key,
     tipo varchar(20),
     stat boolean not null,
-    hr_ent datetime,
-    hr_sai datetime
 );
 
 create table entradas(
     id_cliente integer not null,
     placa_veiculo varchar(20),
     id_vaga integer not null,
+     hr_ent datetime,
+    hr_sai datetime,
     foreign key (id_cliente) references clientes(id_cliente),
     foreign key (placa_veiculo) references Veiculo(placa_veiculo),
     foreign key (id_vaga) references Vagas(id_vaga)
+
 );
 
 create table funcionarios(

@@ -76,6 +76,7 @@ body {
 
 .dp-menu ul li a:hover {
     background-color: var(--cor-3);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, var(--cor-1) 0px 25px;
 }
 
 /*Sub menu*/
