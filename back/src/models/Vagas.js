@@ -1,5 +1,5 @@
 const toCreateVagas = (model) => {
-    return `INSERT INTO Vagas VALUES (${model.id_vaga},'${model.tipo}',${model.stat},${model.hr_ent},${model.hr_sai})`;
+    return `INSERT INTO Vagas VALUES (${model.id_vaga},'${model.tipo}',${model.stat})`;
 }
 
 const toReadAll = () => {
@@ -11,8 +11,7 @@ const toUpdate = (model) => {
     id_vaga = '${model.id_vaga}',
     tipo = '${model.tipo}',
     stat = ${model.stat},
-    hr_ent = '${model.hr_ent}',
-    hr_sai = ${model.hr_sai}`;
+   `;
 }
 
 
@@ -20,5 +19,4 @@ module.exports = {
     toCreateVagas,
     toReadAll,
     toUpdate
-
 }

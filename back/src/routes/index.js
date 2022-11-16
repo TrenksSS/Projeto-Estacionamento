@@ -20,6 +20,7 @@ router.get("/estacionamento/Funcionarios",Funcionario.listarFunc);
 router.delete("/estacionamento/Funcionarios",Funcionario.ExcluirFunc);
 router.post("/estacionamento/Entrada",Entrada.cadEntrada);
 router.get("/estacionamento/Entrada",Entrada.listarEnt);
+router.put("/estacionamento/Entrada",Entrada.alterarEntrada);
 
 
 module.exports = router;

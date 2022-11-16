@@ -13,6 +13,18 @@ const cadEntrada = (req, res) => {
     });
 }
 
+const alterarEntrada = (req, res) => {
+    con.query(Item.toUpdate(req.body), (err, result) => {
+        if (err == null)
+            if (result.affectedRows > 0)
+                res.status(200).end();
+            else
+                res.status(404).end();
+        else
+            res.status(500).json(err).end();
+    });
+} 
+
 const listarEnt = (req, res) => {
     con.query(Item.toReadAll(), (err, result) => {
         if (err == null)
@@ -24,4 +36,5 @@ const listarEnt = (req, res) => {
 module.exports = {
     cadEntrada,
     listarEnt,
+    alterarEntrada
 }
