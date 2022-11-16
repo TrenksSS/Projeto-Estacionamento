@@ -35,6 +35,7 @@ create table entradas(
     id_vaga integer not null,
      hr_ent datetime,
     hr_sai datetime,
+    valor integer,
     foreign key (id_cliente) references clientes(id_cliente),
     foreign key (placa_veiculo) references Veiculo(placa_veiculo),
     foreign key (id_vaga) references Vagas(id_vaga)
