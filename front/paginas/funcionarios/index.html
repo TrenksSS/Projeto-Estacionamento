@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="../../../assets/hatchback.png" type="image/x-icon">
     <title>Estacionamento</title>
 </head>
@@ -15,37 +15,60 @@
         <div id="cont">
             <div id="cab">
                 <div id="cab2">
-                <ul>
-                    <li><img src="../../../assets/hatchback.png" alt="silhueta carro"></li>
-                    <li><h1>Funcionarios</h1></li>
-                </ul>
-            </div>
+                    <ul>
+                        <li><img src="../../../assets/hatchback.png" alt="silhueta carro"></li>
+                        <li>
+                            <h1>Estacionamento</h1>
+                        </li>
+                    </ul>
+                </div>
                 <nav class="dp-menu">
                     <ul>
                         <li><a href="">Listas</a>
                             <ul>
-                                <li><a href="">Funcionarios</a></li>
-                                <li><a href="pgs/lisCli/lisCli.html">Clientes</a></li>
-                                <li><a href="">Carros</a></li>
-                                <li><a href="">Vagas</a></li>
+                                <li><a href="../funcionarios/">Funcionarios</a></li>
+                                <li><a href="../clientes/index.html">Clientes</a></li>
+                                <li><a href="../carros/index.html">Carros</a></li>
+                                <li><a href="../../index.html">Vagas</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Contato</a></li>
                     </ul>
+                    <button id="bt" onclick="mostraModal()">cadastrar</button>
                 </nav>
+
             </div>
+
+
+            <div class="modais">
+            <div class="cadmodal">
+                <h1>Cadastrar Funcionario</h1>
+
+                <h2>CPF</h2>
+                <input type="text" id="cpf-cad">
+
+                <h2>Nome</h2> 
+                <input id="nome-cad" type="text">
+
+                <h2>Senha</h2>
+                <input id="senha-cad" type="text">
+
+                  <button class="cadastrar" onclick="cadastrar()">Cadastrar</button>
+                  <button class="cadastrar" onclick="modais.setAttribute('style','display:none;')">Cancelar</button>
+            </div>
+        </div>
+
+
     </header>
+
     <div id="cont2">
         <div class="vagas model">
-            <h1 id="tcpf">CPF</h1>
-            <h2 id="cpf-fun">000.000.000-00</h2>
-            <h1 id="tnome">Nome:</h1>
-            <h2 id="nome-fun">Fulano da Silva</h2>
-            
-            <input type="checkbox" id="check" name="OC" checked>
+            <h2 id="cpf-fun">Funcionario: </h2>
+            <h2 id="nome-fun">Nome:</h2>
+            <input type="password" id="senha-fun"></input>
+            <img onclick="remover()" src="../../../assets/lixeira.png" alt="lixeirinha">
         </div>
     </div>
 
 </body>
-
+<script src="index.js" ></script>
 </html>

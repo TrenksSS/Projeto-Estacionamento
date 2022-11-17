@@ -1,0 +1,194 @@
+:root {
+    --cor-1: rgb(1, 133, 130);
+    --cor-2: rgb(75, 193, 212);
+    --cor-3: rgb(22, 245, 216);
+    --cor-4: rgb(6, 198, 173);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-1);
+}
+
+#cab {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--cor-2);
+    height: 8vh;
+    padding: 0 20px;
+    color: aliceblue;
+    box-shadow: rgba(22, 22, 22, 0.374) 0px 7px 29px 0px;
+}
+
+#cab2 img {
+    width: 50px;
+}
+
+#cab2 ul {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+#cab2 ul li {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.vagas {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--cor-1);
+    width: 90vw;
+    height: 5vh;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--cor-2);
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    background-color: var(--cor-2);
+}
+
+.dp-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background .3s;
+    border-radius: 10px;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-3);
+    box-shadow: rgba(1, 56, 56, 0.4) 0px 5px, rgba(2, 107, 110, 0.3)0px 10px, rgba(3, 176, 189, 0.2) 0px 15px, rgba(2, 247, 234, 0.1) 0px 20px;
+}
+
+/*Sub menu*/
+.dp-menu ul ul {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px;
+}
+
+.dp-menu ul ul li {
+    display: inline;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+
+}
+
+.dp-menu {
+    display: flex;
+}
+
+#bt {
+    margin: 0;
+    border: 0;
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    background-color: var(--cor-1);
+    box-shadow: rgba(1, 168, 154, 0.5) 0px 2px 4px;
+}
+#bt:hover {
+    transition: 1s;
+    box-shadow: rgba(3, 233, 214, 0.664) 0px 8px 16px;
+}
+.cadmodal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.726);
+    width: 40vw;
+    height: 70vh;
+    left: 60vh;
+    top: 15vh;
+    border-radius: 15px;
+    
+}
+.cadmodal h2{
+    margin-bottom: 10px;
+}
+.cadmodal input{
+    font-size: 20px;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.cadmodal h1{
+    margin-bottom: 20px;
+}
+#op{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 10px;
+}
+.cadastrar{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: var(--cor-1);
+    box-shadow: rgba(1, 168, 154, 0.5) 0px 2px 4px;
+    border-radius: 5px;
+}
+.cadastrar:hover{
+    box-shadow: rgba(3, 233, 214, 0.664) 0px 8px 16px;
+    transition: 1s;
+}
+.modais{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+#cont2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cont2 img{
+    width: 30px;
+    cursor: pointer;
+}
+#cb{
+    width: 30px;
+    height: 25px;
+}
