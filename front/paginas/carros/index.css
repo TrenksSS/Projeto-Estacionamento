@@ -46,15 +46,14 @@ body {
 }
 
 .vagas {
-    flex-direction: column;
     display: flex;
     align-items: center;
-    border: 2px solid rgb(246, 229, 47);
-    width: 8vw;
-    height: 20vh;
+    border: 2px solid var(--cor-1);
+    width: 90vw;
+    height: 5vh;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgb(174, 238, 169);
+    background-color: var(--cor-2);
     justify-content: space-between;
     padding: 20px;
 }
@@ -129,13 +128,26 @@ body {
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.315);
+    background-color: rgba(255, 255, 255, 0.726);
     width: 40vw;
-    height: 40vh;
+    height: 70vh;
     left: 60vh;
-    bottom: 20vw;
+    top: 15vh;
     border-radius: 15px;
     
+}
+.cadmodal h2{
+    margin-bottom: 10px;
+}
+.cadmodal input{
+    font-size: 20px;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.cadmodal h1{
+    margin-bottom: 20px;
 }
 #op{
     width: 100px;
@@ -169,6 +181,12 @@ body {
 }
 #cont2{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cont2 img{
+    width: 30px;
+    cursor: pointer;
 }
 #cb{
     width: 30px;

@@ -37,34 +37,38 @@
                 </nav>
 
             </div>
+
+
             <div class="modais">
             <div class="cadmodal">
-                <h1>Cadastrar Vaga</h1>
-                <input type="text" id="vagid">
-                <h2 id="tp">Tipo</h2> 
+                <h1>Cadastrar Funcionario</h1>
 
-                <select id="op" name="select">
-                    <option value="carro">carro</option>
-                    <option value="moto">moto</option>
-                    <option value="PCD">PCD</option>
-                  </select>
+                <h2>Id Cliente </h2>
+                <input type="text" id="id-cli-cad">
 
-                  <select id="x" name="select">
-                    <option  value="0">Vaga desocupada</option>
-                    <option  value="1">Vaga ocupada</option>
-                  </select>
+                <h2>Nome</h2> 
+                <input id="nome-cli-cad" type="text">
+
+                <h2>Telefone</h2>
+                <input id="tel-cli-cad" type="text">
 
                   <button class="cadastrar" onclick="cadastrar()">Cadastrar</button>
                   <button class="cadastrar" onclick="modais.setAttribute('style','display:none;')">Cancelar</button>
             </div>
         </div>
+
+
     </header>
 
     <div id="cont2">
         <div class="vagas model">
-            <h1 id="title">Vaga: </h1>
-            <p id="tip"></p>
-            <input id="cb" type="checkbox" id="check" name="OC" checked>
+            <h2 id="id-cli">Cliente id: </h2>
+            <h2 id="placa">Placa:     </h2>
+            <h2 id="cor">Cor: </h2>
+            <h2 id="modelo">Modelo: </h2>
+            <h2 id="tipo">Tipo: </h2>
+            
+            <img onclick="remover()" src="../../../assets/lixeira.png" alt="lixeirinha">
         </div>
     </div>
 

@@ -43,14 +43,14 @@
             <div class="cadmodal">
                 <h1>Cadastrar Funcionario</h1>
 
-                <h2>CPF</h2>
-                <input type="text" id="cpf-cad">
+                <h2>Id Cliente </h2>
+                <input type="text" id="id-cli-cad">
 
                 <h2>Nome</h2> 
-                <input id="nome-cad" type="text">
+                <input id="nome-cli-cad" type="text">
 
-                <h2>Senha</h2>
-                <input id="senha-cad" type="text">
+                <h2>Telefone</h2>
+                <input id="tel-cli-cad" type="text">
 
                   <button class="cadastrar" onclick="cadastrar()">Cadastrar</button>
                   <button class="cadastrar" onclick="modais.setAttribute('style','display:none;')">Cancelar</button>
@@ -62,9 +62,9 @@
 
     <div id="cont2">
         <div class="vagas model">
-            <h2 id="cpf-fun">Funcionario: </h2>
-            <h2 id="nome-fun">Nome:</h2>
-            <input type="password" id="senha-fun"></input>
+            <h2 id="id-cli">Cliente id: </h2>
+            <h2 id="nome-cli">Nome:     </h2>
+            <h2 id="tel-cli">Telefone: </h2>
             <img onclick="remover()" src="../../../assets/lixeira.png" alt="lixeirinha">
         </div>
     </div>

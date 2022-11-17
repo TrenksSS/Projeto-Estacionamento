@@ -9,7 +9,7 @@ function mostraModal() {
     modais.setAttribute("style", "display:flex;");
 }
 
-fetch("/estacionamento/Cliente")
+fetch("http://localhost:3004/estacionamento/Cliente")
     .then((res) => {
         return res.json();
     })
@@ -19,9 +19,9 @@ fetch("/estacionamento/Cliente")
 
             novoItem.classList.remove(".model");
 
-            novoItem.querySelector("#cpf-fun").append(todo.cpf);
-            novoItem.querySelector("#nome-fun").append(todo.nome_func);
-            novoItem.querySelector("#senha-fun").append(todo.senha);
+            novoItem.querySelector("#id-cli").append(todo.id_cliente);
+            novoItem.querySelector("#nome-cli").append(todo.nome);
+            novoItem.querySelector("#tel-cli").append(todo.telefone);
 
             list.appendChild(novoItem);
         });
@@ -31,21 +31,21 @@ fetch("/estacionamento/Cliente")
         let data = {};
 
         let body = {
-            "cpf": document.getElementById("cpf-cad").value,
-            "nome": document.getElementById("nome-cad").value,
-            "senha": document.getElementById("senha-cad").value
+            "id": document.getElementById("id-cli-cad").value,
+            "nome": document.getElementById("nome-cli-cad").value,
+            "tel": document.getElementById("tel-cli-cad").value
         }
         const options = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
         };
         options.body = JSON.stringify(body);
-        if (body.cpf.length > 0 && body.nome.length > 0 && body.senha.length > 0) {
+        if (body.id.length > 0 && body.nome.length > 0 && body.tel.length > 0) {
             fetch(uri, options)
                 .then(resp => resp.status)
                 .then(data => {
                     if (data == 201) {
-                        alert("Funcionario cadastrado com sucesso");
+                        alert("Cliente cadastrado com sucesso");
                         window.location.reload();
                     } else {
                         alert("Erro ao enviar dados.");
@@ -58,8 +58,8 @@ fetch("/estacionamento/Cliente")
         }
     }
 
-    function remover(cpf, item) {
-        fetch("http://localhost:3004/estacionamento/Funcionarios/cpf/" + cpf, {
+    function remover(id, item) {
+        fetch("http://localhost:3004/estacionamento/Cliente/" + id, {
             "method":"DELETE"
         })
         .then(resp => { return resp.json()})

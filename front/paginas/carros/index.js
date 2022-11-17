@@ -1,6 +1,6 @@
 var modais = document.querySelector(".modais")
 var list = document.querySelector("#cont2")
-var uri = `http://localhost:3004/estacionamento/Vagas`
+var uri = `http://localhost:3004/estacionamento/Funcionarios`
 
 function rec() {
     window.location.href = "../front/index.html"
@@ -9,7 +9,7 @@ function mostraModal() {
     modais.setAttribute("style", "display:flex;");
 }
 
-fetch("http://localhost:3004/estacionamento/Vagas")
+fetch("http://localhost:3004/estacionamento/Veiculo")
     .then((res) => {
         return res.json();
     })
@@ -19,9 +19,11 @@ fetch("http://localhost:3004/estacionamento/Vagas")
 
             novoItem.classList.remove(".model");
 
-            novoItem.querySelector("#title").append(todo.id_vaga);
-            novoItem.querySelector("#tip").append(todo.tipo);
-            novoItem.querySelector("#cb").checked = todo.stat;
+            novoItem.querySelector("#id-cli").append(todo.id_cliente);
+            novoItem.querySelector("#placa").append(todo.placa_veiculo);
+            novoItem.querySelector("#cor").append(todo.cor);
+            novoItem.querySelector("#modelo").append(todo.modelo);
+            novoItem.querySelector("#tipo").append(todo.tipo);
 
             list.appendChild(novoItem);
         });
@@ -31,16 +33,16 @@ fetch("http://localhost:3004/estacionamento/Vagas")
         let data = {};
 
         let body = {
-            "id": document.getElementById("vagid").value,
-            "tipo": document.getElementById("op").value,
-            "chec": document.getElementById("x").value
+            "id": document.getElementById("id-cli-cad").value,
+            "nome": document.getElementById("nome-cli-cad").value,
+            "tel": document.getElementById("tel-cli-cad").value
         }
         const options = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
         };
         options.body = JSON.stringify(body);
-        if (body.id.length > 0 && body.tipo.length > 0 && body.chec.length > 0) {
+        if (body.id.length > 0 && body.nome.length > 0 && body.tel.length > 0) {
             fetch(uri, options)
                 .then(resp => resp.status)
                 .then(data => {
@@ -56,4 +58,14 @@ fetch("http://localhost:3004/estacionamento/Vagas")
         }else{
             alert("Preencha todos os campos obrigatórios");
         }
+    }
+
+    function remover(id, item) {
+        fetch("http://localhost:3004/estacionamento/Cliente/" + id, {
+            "method":"DELETE"
+        })
+        .then(resp => { return resp.json()})
+        .then(data => {
+            item.remove();
+        });
     }
