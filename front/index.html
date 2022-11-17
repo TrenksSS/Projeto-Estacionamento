@@ -33,20 +33,28 @@
                             </ul>
                         </li>
                     </ul>
-                    <button id="bt" onclick="mostrarModal()">cadastrar</button>
+                    <button id="bt" onclick="mostraModal()">cadastrar</button>
                 </nav>
 
             </div>
             <div class="modais">
             <div class="cadmodal">
                 <h1>Cadastrar Vaga</h1>
-                <h2 id="">Tipo</h2>
+                <input type="number" id="vagid">
+                <h2 id="tp">Tipo</h2> 
+
                 <select id="op" name="select">
-                    <option value="valor1">carro</option>
-                    <option value="valor3">moto</option>
-                    <option value="valor3">PCD</option>
+                    <option value="carro">carro</option>
+                    <option value="moto">moto</option>
+                    <option value="PCd">PCD</option>
                   </select>
-                  <button class="cadastrar" onclick="">Cadastrar</button>
+
+                  <select id="x" name="select">
+                    <option value="0">Vaga desocupada</option>
+                    <option value="1">Vaga ocupada</option>
+                  </select>
+
+                  <button class="cadastrar" onclick="cadastrar()">Cadastrar</button>
                   <button class="cadastrar" onclick="modais.setAttribute('style','display:none;')">Cancelar</button>
             </div>
         </div>
@@ -54,10 +62,9 @@
 
     <div id="cont2">
         <div class="vagas model">
-            <h1 id="title">Vaga 01</h1>
-            <img src="/assets/desativado.png" alt="icone pcd">
-            <p>Vaga</p>
-            <input type="checkbox" id="check" name="OC" checked>
+            <h1 id="title">Vaga: </h1>
+            <p id="tip"></p>
+            <input id="cb" type="checkbox" id="check" name="OC" checked>
         </div>
     </div>
 

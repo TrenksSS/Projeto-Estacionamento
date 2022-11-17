@@ -55,6 +55,8 @@ body {
     margin: 10px;
     border-radius: 10px;
     background-color: rgb(174, 238, 169);
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .dp-menu ul {
@@ -149,6 +151,7 @@ body {
     border: 0;
     background-color: var(--cor-1);
     box-shadow: rgba(1, 168, 154, 0.5) 0px 2px 4px;
+    border-radius: 5px;
 }
 .cadastrar:hover{
     box-shadow: rgba(3, 233, 214, 0.664) 0px 8px 16px;
@@ -163,4 +166,11 @@ body {
     height: 100%;
     flex-direction: column;
     align-items: center;
+}
+#cont2{
+    display: flex;
+}
+#cb{
+    width: 30px;
+    height: 25px;
 }
