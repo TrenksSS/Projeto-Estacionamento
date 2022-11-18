@@ -23,7 +23,14 @@ fetch("http://localhost:3004/estacionamento/Vagas")
             novoItem.querySelector("#tip").append(todo.tipo);
             novoItem.querySelector("#cb").checked = todo.stat;
 
+            novoItem.querySelector("#cb").addEventListener("change",()=>{
+                if(this.checked){
+                    vagas.setAttribute("style", "background-color:red;");
+                } 
+            })
+
             list.appendChild(novoItem);
+           
         });
     });
 

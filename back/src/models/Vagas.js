@@ -1,5 +1,5 @@
 const toCreateVagas = (model) => {
-    return `INSERT INTO Vagas VALUES (${model.id_vaga},'${model.tipo}',${model.stat})`;
+    return `INSERT INTO Vagas VALUES (${model.id},'${model.tipo}',${model.chec})`;
 }
 
 const toReadAll = () => {

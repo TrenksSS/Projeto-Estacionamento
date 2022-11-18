@@ -22,6 +22,7 @@ fetch("http://localhost:3004/estacionamento/Funcionarios")
             novoItem.querySelector("#cpf-fun").append(todo.cpf);
             novoItem.querySelector("#nome-fun").append(todo.nome_func);
             novoItem.querySelector("#senha-fun").append(todo.senha);
+            novoItem.querySelector('img').addEventListener('click', () => remover(todo.cpf.toString(), novoItem))
 
             list.appendChild(novoItem);
         });
@@ -38,8 +39,8 @@ fetch("http://localhost:3004/estacionamento/Funcionarios")
         const options = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body)
         };
-        options.body = JSON.stringify(body);
         if (body.cpf.length > 0 && body.nome.length > 0 && body.senha.length > 0) {
             fetch(uri, options)
                 .then(resp => resp.status)
@@ -62,8 +63,9 @@ fetch("http://localhost:3004/estacionamento/Funcionarios")
         fetch("http://localhost:3004/estacionamento/Funcionarios/cpf/" + cpf, {
             "method":"DELETE"
         })
-        .then(resp => { return resp.json()})
+        .then(resp => { return resp})
         .then(data => {
+            console.log(item)
             item.remove();
         });
     }

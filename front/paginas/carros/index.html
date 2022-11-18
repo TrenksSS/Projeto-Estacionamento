@@ -46,11 +46,19 @@
                 <h2>Id Cliente </h2>
                 <input type="text" id="id-cli-cad">
 
-                <h2>Nome</h2> 
-                <input id="nome-cli-cad" type="text">
+                <h2>Placa</h2> 
+                <input id="plac-v" type="text">
 
-                <h2>Telefone</h2>
-                <input id="tel-cli-cad" type="text">
+                <h2>Cor</h2>
+                <input id="cor-v" type="text">
+
+                <h2>Modelo</h2>
+                <input id="mo-v" type="text">
+
+                <select id="cc" name="select">
+                    <option  value="carro">Carro</option>
+                    <option  value="moto">Moto</option>
+                  </select>
 
                   <button class="cadastrar" onclick="cadastrar()">Cadastrar</button>
                   <button class="cadastrar" onclick="modais.setAttribute('style','display:none;')">Cancelar</button>
@@ -68,7 +76,6 @@
             <h2 id="modelo">Modelo: </h2>
             <h2 id="tipo">Tipo: </h2>
             
-            <img onclick="remover()" src="../../../assets/lixeira.png" alt="lixeirinha">
         </div>
     </div>
 

@@ -2,6 +2,7 @@ const Item = require('../models/Funcionario');
 const con = require('../models/estacionamentoDAO');
 
 const cadFuncionario = (req, res) => {
+    console.log(req.body)
     con.query(Item.toCreateFuncionario(req.body), (err, result) => {
         if (err == null)
             res.status(201).end();
@@ -23,10 +24,10 @@ const listarFunc = (req, res) => {
 }
 
 const ExcluirFunc = (req, res) => {
-        con.query(Item.del(req.body), (err, result) => {
+        con.query(Item.del(req.params.cpf), (err, result) => {
             if (err == null)
                 if (result.affectedRows > 0)
-                    res.status(204).end();
+                    res.status(204).json(req.params).end();
                 else
                     res.status(404).end();
             else

@@ -1,6 +1,6 @@
 var modais = document.querySelector(".modais")
 var list = document.querySelector("#cont2")
-var uri = `http://localhost:3004/estacionamento/Funcionarios`
+var uri = `http://localhost:3004/estacionamento/Cliente`
 
 function rec() {
     window.location.href = "../front/index.html"

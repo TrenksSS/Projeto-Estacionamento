@@ -3,11 +3,14 @@ const con = require('../models/estacionamentoDAO');
 
 const cadVeiculo = (req, res) => {
     con.query(Item.toCreateVeiculo(req.body), (err, result) => {
+        console.log(req)
         if (err == null)
             res.status(201).end();
         else
-            if (err.sqlState == 23000)
+            if (err.sqlState == 23000){
+            console.log(err)
                 res.status(406).json(err).end();
+            }
             else
                 res.status(500).json(err).end();
     });
